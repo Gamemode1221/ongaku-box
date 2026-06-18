@@ -1,0 +1,13 @@
+package com.ongaku.jpop;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class OngakuBoxApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(OngakuBoxApplication.class, args);
+    }
+
+}
