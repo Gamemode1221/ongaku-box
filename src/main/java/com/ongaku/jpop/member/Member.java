@@ -1,14 +1,16 @@
 package com.ongaku.jpop.member;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+
+import java.time.LocalDateTime;
 
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Member {
 
     @Id
@@ -24,4 +26,7 @@ public class Member {
 
     @Column(nullable = false)
     private String email;
+
+    @Column(nullable = false)
+    private LocalDateTime createdAt;
 }
